@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Name Taking App</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+   <!-- page header -->
+    <div id="page-header" class="row">
+      <div class="col-sm-12">
+        <h1 class="text-center">Name Taking App</h1>
+      </div><!--./col-sm-12-->
+    </div><!--./row-->
+
+    <div class="container">
+      <!-- Create Task -->
+      <div class="card">
+        <!-- Create Tasks button -->
+        <div class="row">
+          <div class="col-sm-12">
+            <h2 class="orange">Namer on eth</h2>
+          </div>
+        </div>
+        <div class="row">
+          <form id="new-task" class="col-sm-12">
+            <div class="form-group">
+              <label for="task-content">Name1</label>
+              <input id="task-content" type="text" class="form-control"></input>
+            </div>
+            <div class="form-group">
+                <label for="task-author">Name2(if in a group)</label>
+                <input id="task-author" type="text" class="form-control"></input>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div><!--./row-->
+      </div><!--./card-->
+
+      <!-- Tasks List -->
+      <div class="card">
+        <div class="row">
+          <div class="col-sm-12">
+            <h2 class="orange">NAMES</h2>
+          </div><!--./col-sm-12-->
+        </div><!--./row-->
+        <div class="row">
+          <div class="col-sm-12">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Date</th>
+                  <th>Name1</th>
+                  <th>Name2</th>
+                </tr>
+              </thead>
+              <tbody id="tasks">
+                <!-- tasks here -->
+              </tbody>
+            </table>
+          </div><!--./col-sm-12-->
+        </div><!--./row-->
+      </div><!--./card-->
+    </div>
+
+    <script src="dist/bundle.js"></script>
+  </body>
+</html>
